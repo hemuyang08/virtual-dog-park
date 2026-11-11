@@ -152,6 +152,73 @@ footer {
   margin-bottom: 0.4rem;
 }
 
+/* ===== Dog portrait: one size per growth stage ===== */
+/* The <img> is sized by a class that changes with the stage, so the
+   visitor can see the dog grow. */
+.dog-portrait {
+  display: block;
+  margin: 0 auto 1rem;
+  transition: width 0.35s ease, height 0.35s ease;
+}
+
+.dog-portrait.size-puppy {
+  width: 90px;
+  height: 90px;
+}
+
+.dog-portrait.size-young {
+  width: 130px;
+  height: 130px;
+}
+
+.dog-portrait.size-adult {
+  width: 170px;
+  height: 170px;
+}
+
+/* ===== Growth bar ===== */
+.growth {
+  margin: 1rem 0 0.5rem;
+  text-align: left;
+}
+
+.growth-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.growth-track {
+  height: 14px;
+  background-color: #f0ead9;
+  border: 1px solid #e0d6c0;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.growth-fill {
+  height: 100%;
+  width: 25%;
+  background-color: #5b8a3a;
+  border-radius: 6px;
+  transition: width 0.35s ease;
+}
+
+/* The stage name is always written out in words here too, so growth
+   never relies on colour or size alone. */
+.growth-caption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.35rem;
+}
+
+/* ===== Action buttons ===== */
+.dog-actions {
+  margin-top: 0.75rem;
+}
+
 #feed-btn,
 #play-btn {
   margin: 0.5rem 0.25rem 0;
@@ -167,6 +234,53 @@ footer {
 #feed-btn:hover,
 #play-btn:hover {
   background-color: #b8862e;
+}
+
+#next-day-btn {
+  margin: 0.5rem 0.25rem 0;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  background-color: #5b8a3a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#next-day-btn:hover {
+  background-color: #4a7a2e;
+}
+
+/* Start Over is quieter than the care buttons, but still easy to see. */
+#start-over-btn {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  background-color: #fff;
+  color: #96322a;
+  border: 1px solid #96322a;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-over-btn:hover {
+  background-color: #f7e7e5;
+}
+
+/* Small note that explains where the saved dog lives. */
+.storage-note {
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  color: #777;
+  text-align: left;
+  border-top: 1px solid #eee4d2;
+  padding-top: 0.75rem;
+}
+
+.storage-note code {
+  background-color: #f7f3e9;
+  padding: 0 0.2rem;
+  border-radius: 3px;
 }
 
 /* ===== Responsive: laptop / wide screen ===== */

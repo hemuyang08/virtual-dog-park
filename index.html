@@ -86,13 +86,41 @@
 
       <!-- Dog display (hidden until adoption) -->
       <div id="dog-display">
+        <!-- The portrait gets bigger as the dog grows up -->
+        <img id="display-portrait" class="dog-portrait" src="" alt="">
+
         <p>Name: <span id="display-name"></span></p>
         <p>Breed: <span id="display-breed"></span></p>
         <p>Day: <span id="display-day"></span></p>
         <p>Stage: <span id="display-stage"></span></p>
         <p>Happiness: <span id="display-happiness"></span></p>
-        <button id="feed-btn">Feed</button>
-        <button id="play-btn">Play</button>
+
+        <!-- Growth bar: how far the dog has grown toward Adult Dog -->
+        <div class="growth">
+          <div class="growth-label">
+            <span>Growth</span>
+            <span id="growth-percent"></span>
+          </div>
+          <div id="growth-track" class="growth-track"
+               role="progressbar" aria-valuemin="0" aria-valuemax="100"
+               aria-valuenow="0" aria-label="Growth">
+            <div id="growth-fill" class="growth-fill"></div>
+          </div>
+          <p id="growth-caption" class="growth-caption"></p>
+        </div>
+
+        <div class="dog-actions">
+          <button id="feed-btn">Feed</button>
+          <button id="play-btn">Play</button>
+          <button id="next-day-btn">Next Day</button>
+        </div>
+
+        <button id="start-over-btn">Start Over</button>
+
+        <p class="storage-note">
+          This dog is saved in your browser's localStorage under the key
+          <code>virtualDogParkPetV1</code>, so it comes back after a refresh.
+        </p>
       </div>
     </section>
   </main>
