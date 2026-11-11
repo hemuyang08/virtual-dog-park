@@ -83,6 +83,92 @@ footer {
   color: #666;
 }
 
+/* ===== My Virtual Dog Section ===== */
+#my-dog {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 2px solid #e0d6c0;
+  border-radius: 10px;
+}
+
+#my-dog h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #5b8a3a;
+}
+
+/* Adoption form */
+#adoption-form {
+  text-align: center;
+}
+
+#adoption-form label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+  font-weight: bold;
+}
+
+#adoption-form input,
+#adoption-form select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#adopt-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  background-color: #5b8a3a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#adopt-btn:hover {
+  background-color: #4a7a2e;
+}
+
+#name-error {
+  color: #c0392b;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Dog display (hidden by default) */
+#dog-display {
+  display: none;
+  text-align: center;
+}
+
+#dog-display p {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+#feed-btn,
+#play-btn {
+  margin: 0.5rem 0.25rem 0;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  background-color: #d4a04a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feed-btn:hover,
+#play-btn:hover {
+  background-color: #b8862e;
+}
+
 /* ===== Responsive: laptop / wide screen ===== */
 @media (min-width: 768px) {
   #encyclopedia {

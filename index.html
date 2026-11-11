@@ -62,6 +62,39 @@
       </article>
 
     </section>
+
+    <!-- ===== My Virtual Dog Section ===== -->
+    <section id="my-dog">
+      <h2>My Virtual Dog</h2>
+
+      <!-- Adoption form (shown before adoption) -->
+      <div id="adoption-form">
+        <label for="dog-name">Dog Name:</label>
+        <input type="text" id="dog-name" maxlength="20"
+               placeholder="Enter a name (max 20 characters)">
+
+        <label for="dog-breed">Breed:</label>
+        <select id="dog-breed">
+          <option value="Beagle">Beagle</option>
+          <option value="Golden Retriever">Golden Retriever</option>
+          <option value="Poodle">Poodle</option>
+        </select>
+
+        <button id="adopt-btn">Adopt</button>
+        <p id="name-error"></p>
+      </div>
+
+      <!-- Dog display (hidden until adoption) -->
+      <div id="dog-display">
+        <p>Name: <span id="display-name"></span></p>
+        <p>Breed: <span id="display-breed"></span></p>
+        <p>Day: <span id="display-day"></span></p>
+        <p>Stage: <span id="display-stage"></span></p>
+        <p>Happiness: <span id="display-happiness"></span></p>
+        <button id="feed-btn">Feed</button>
+        <button id="play-btn">Play</button>
+      </div>
+    </section>
   </main>
 
   <footer>
