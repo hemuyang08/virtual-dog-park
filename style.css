@@ -219,6 +219,13 @@ footer {
   margin-top: 0.75rem;
 }
 
+/* One short line saying what each button does to happiness. */
+.action-hint {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.6rem;
+}
+
 #feed-btn,
 #play-btn {
   margin: 0.5rem 0.25rem 0;

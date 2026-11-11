@@ -12,8 +12,8 @@
   <header>
     <h1>Virtual Dog Park</h1>
     <p class="welcome">
-      Welcome! Explore our dog encyclopedia to learn about
-      three popular breeds — their size, personality, and everyday care.
+      Welcome! Browse the dog encyclopedia to learn about three popular breeds,
+      then adopt a virtual dog of your own and take care of it day by day.
     </p>
   </header>
 
@@ -71,6 +71,7 @@
       <div id="adoption-form">
         <label for="dog-name">Dog Name:</label>
         <input type="text" id="dog-name" maxlength="20"
+               aria-describedby="name-error"
                placeholder="Enter a name (max 20 characters)">
 
         <label for="dog-breed">Breed:</label>
@@ -81,19 +82,20 @@
         </select>
 
         <button id="adopt-btn">Adopt</button>
-        <p id="name-error"></p>
+        <p id="name-error" role="alert"></p>
       </div>
 
       <!-- Dog display (hidden until adoption) -->
       <div id="dog-display">
-        <!-- The portrait gets bigger as the dog grows up -->
-        <img id="display-portrait" class="dog-portrait" src="" alt="">
+        <!-- The portrait gets bigger as the dog grows up. Its image and
+             alt text are filled in by script.js after adoption. -->
+        <img id="display-portrait" class="dog-portrait" alt="Your adopted dog">
 
         <p>Name: <span id="display-name"></span></p>
         <p>Breed: <span id="display-breed"></span></p>
         <p>Day: <span id="display-day"></span></p>
         <p>Stage: <span id="display-stage"></span></p>
-        <p>Happiness: <span id="display-happiness"></span></p>
+        <p>Happiness: <span id="display-happiness"></span> / 100</p>
 
         <!-- Growth bar: how far the dog has grown toward Adult Dog -->
         <div class="growth">
@@ -114,6 +116,11 @@
           <button id="play-btn">Play</button>
           <button id="next-day-btn">Next Day</button>
         </div>
+
+        <p class="action-hint">
+          Feed and Play add 10 happiness, up to 100. Each Next Day moves the dog
+          forward one day and costs 5 happiness; happiness never drops below 0.
+        </p>
 
         <button id="start-over-btn">Start Over</button>
 
