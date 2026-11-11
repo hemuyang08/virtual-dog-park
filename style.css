@@ -1,0 +1,108 @@
+/* ===== Virtual Dog Park — style.css ===== */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f7f3e9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #5b8a3a;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== Encyclopedia Section ===== */
+#encyclopedia {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#encyclopedia h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #5b8a3a;
+}
+
+/* ===== Breed Cards ===== */
+.breed-card {
+  background-color: #fff;
+  border: 2px solid #e0d6c0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.breed-card img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+.breed-card h3 {
+  font-size: 1.3rem;
+  color: #5b8a3a;
+  margin-bottom: 0.75rem;
+}
+
+.breed-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0d6c0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ===== Responsive: laptop / wide screen ===== */
+@media (min-width: 768px) {
+  #encyclopedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .breed-card {
+    margin-bottom: 0;
+  }
+
+  /* Lay cards side by side on wider screens */
+  #encyclopedia {
+    display: block;
+  }
+
+  .breed-card {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin: 0 1%;
+  }
+}

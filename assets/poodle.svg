@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Illustration of a Poodle — simple original vector art -->
+
+  <!-- Body (curly texture suggested by overlapping circles) -->
+  <circle cx="100" cy="130" r="30" fill="#e8e0d4"/>
+  <circle cx="80" cy="135" r="22" fill="#e8e0d4"/>
+  <circle cx="120" cy="135" r="22" fill="#e8e0d4"/>
+  <circle cx="100" cy="145" r="22" fill="#e8e0d4"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="75" r="28" fill="#e8e0d4"/>
+
+  <!-- Floppy ears (long pom-pom style) -->
+  <circle cx="73" cy="75" r="14" fill="#d4ccbf"/>
+  <circle cx="127" cy="75" r="14" fill="#d4ccbf"/>
+
+  <!-- Top knot (poodle pom-pom on head) -->
+  <circle cx="100" cy="50" r="16" fill="#e8e0d4"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="100" cy="85" rx="14" ry="11" fill="#d4ccbf"/>
+
+  <!-- Eyes -->
+  <circle cx="92" cy="72" r="3.5" fill="#333"/>
+  <circle cx="108" cy="72" r="3.5" fill="#333"/>
+
+  <!-- Nose -->
+  <ellipse cx="100" cy="82" rx="5" ry="3.5" fill="#333"/>
+
+  <!-- Mouth -->
+  <path d="M 93 90 Q 100 94 107 90" stroke="#333" stroke-width="2" fill="none"/>
+
+  <!-- Front legs with pom-pom cuffs -->
+  <rect x="86" y="150" width="8" height="18" fill="#d4ccbf"/>
+  <rect x="106" y="150" width="8" height="18" fill="#d4ccbf"/>
+  <circle cx="90" cy="168" r="10" fill="#e8e0d4"/>
+  <circle cx="110" cy="168" r="10" fill="#e8e0d4"/>
+
+  <!-- Tail pom-pom -->
+  <circle cx="150" cy="115" r="12" fill="#e8e0d4"/>
+</svg>
